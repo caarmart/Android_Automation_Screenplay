@@ -9,11 +9,12 @@ buildscript {
     }
 }
 
-apply plugin: "org.sonarqube"
 plugins {
     id 'java'
     id "org.sonarqube" version "2.7.1"
 }
+
+apply plugin: "org.sonarqube"
 
 version '1.0-SNAPSHOT'
 
