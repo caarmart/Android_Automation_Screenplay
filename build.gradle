@@ -1,16 +1,3 @@
-plugins {
-    id 'java'
-    id "org.sonarqube" version "2.7.1"
-}
-
-version '1.0-SNAPSHOT'
-
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
-}
-
 buildscript {
     repositories {
         maven {
@@ -23,6 +10,18 @@ buildscript {
 }
 
 apply plugin: "org.sonarqube"
+plugins {
+    id 'java'
+    id "org.sonarqube" version "2.7.1"
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
 
 ext{
     latestVersion = '+'
