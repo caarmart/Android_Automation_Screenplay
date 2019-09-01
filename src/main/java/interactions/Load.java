@@ -14,26 +14,6 @@ public class Load implements Interaction {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-
         MAIN_SCREEN.resolveFor(actor).shouldBeVisible();
-        System.out.println("");
-
-
-        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");
-        System.out.println("");
-        System.out.println("");        System.out.println("");        System.out.println("");
-        System.out.println("");        System.out.println("");        System.out.println("");
-        System.out.println("");        System.out.println("");
-        System.out.println("");        System.out.println("");        System.out.println("");
-        System.out.println("");
-
-
-
-
-
-
-
-
-
     }
 }

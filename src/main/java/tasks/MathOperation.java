@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 
 import static user_interfaces.Calculator.OBTAINED_RESULT;
-import static utilities.NumberAndOperations.EQUALS;
+import static utilities.constants.NumberAndOperations.EQ;
 
 public class MathOperation implements Task {
 
@@ -26,7 +26,7 @@ public class MathOperation implements Task {
         actor.attemptsTo(Select.theNumber(firstNumber));
         actor.attemptsTo(Select.theOperation(mathOperation));
         actor.attemptsTo(Select.theNumber(secondNumber));
-        actor.attemptsTo(Select.theOperation(EQUALS));
+        actor.attemptsTo(Select.theOperation(EQ));
         actor.remember("ObtainedResult", OBTAINED_RESULT.resolveFor(actor).getText());
     }
 }

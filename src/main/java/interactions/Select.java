@@ -8,12 +8,12 @@ import user_interfaces.Calculator;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static user_interfaces.Calculator.*;
-import static utilities.NumberAndOperations.ADD;
-import static utilities.NumberAndOperations.DIV;
-import static utilities.NumberAndOperations.EQUALS;
-import static utilities.NumberAndOperations.MINUS;
-import static utilities.NumberAndOperations.MUL;
-import static utilities.NumberAndOperations.*;
+import static utilities.constants.NumberAndOperations.ADD;
+import static utilities.constants.NumberAndOperations.DIV;
+import static utilities.constants.NumberAndOperations.EQ;
+import static utilities.constants.NumberAndOperations.MINUS;
+import static utilities.constants.NumberAndOperations.MUL;
+import static utilities.constants.NumberAndOperations.*;
 
 public class Select implements Interaction {
 
@@ -23,17 +23,6 @@ public class Select implements Interaction {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(target));
         target = null;
-
-/*
-        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");
-        System.out.println("");
-        System.out.println("");        System.out.println("");        System.out.println("");
-        System.out.println("");        System.out.println("");        System.out.println("");
-        System.out.println("");        System.out.println("");
-        System.out.println("");        System.out.println("");        System.out.println("");
-        System.out.println("");
-*/
-
     }
 
     public static Select theNumber(int number) {
@@ -89,7 +78,7 @@ public class Select implements Interaction {
             case DIV:
                 target = Calculator.DIV;
                 break;
-            case EQUALS:
+            case EQ:
                 target = Calculator.EQUALS;
                 break;
             default:
