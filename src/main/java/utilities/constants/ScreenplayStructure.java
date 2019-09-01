@@ -2,6 +2,10 @@ package utilities.constants;
 
 public class ScreenplayStructure {
 
+    private ScreenplayStructure() {
+        throw new IllegalStateException(UTILITY_CLASS);
+    }
+
     public static final String UTILITY_CLASS = "Utility class";
     public static final String RUNNER_CLASS = "Runner class";
     public static final String INTERACTION_CLASS = "Interaction class";

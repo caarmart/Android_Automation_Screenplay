@@ -79,7 +79,7 @@ public class Select implements Interaction {
                 target = Calculator.DIV;
                 break;
             case EQ:
-                target = Calculator.EQUALS;
+                target = Calculator.EQ;
                 break;
             default:
         }

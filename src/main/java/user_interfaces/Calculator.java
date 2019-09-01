@@ -3,7 +3,13 @@ package user_interfaces;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
+import static utilities.constants.ScreenplayStructure.USER_INTERFACE_CLASS;
+
 public class Calculator {
+
+    private Calculator() {
+        throw new IllegalStateException(USER_INTERFACE_CLASS);
+    }
 
     public static final Target MAIN_SCREEN = Target.the("Main Screen").located(By.id("com.android.calculator2:id/main_calculator"));
     public static final Target NUMBER1 = Target.the("Number 1").located(By.id("com.android.calculator2:id/digit_1"));
@@ -20,6 +26,6 @@ public class Calculator {
     public static final Target MINUS = Target.the("Minus button").located(By.id("com.android.calculator2:id/op_sub"));
     public static final Target MUL = Target.the("Mul button").located(By.id("com.android.calculator2:id/op_mul"));
     public static final Target DIV = Target.the("Div button").located(By.id("com.android.calculator2:id/op_div"));
-    public static final Target EQUALS = Target.the("Equal button").located(By.id("com.android.calculator2:id/eq"));
+    public static final Target EQ = Target.the("Equal button").located(By.id("com.android.calculator2:id/eq"));
     public static final Target OBTAINED_RESULT = Target.the("Obtained result").located(By.id("com.android.calculator2:id/result"));
 }
