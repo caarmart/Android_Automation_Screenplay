@@ -23,6 +23,17 @@ public class Select implements Interaction {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(target));
         target = null;
+
+/*
+        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");        System.out.println("");
+        System.out.println("");
+        System.out.println("");        System.out.println("");        System.out.println("");
+        System.out.println("");        System.out.println("");        System.out.println("");
+        System.out.println("");        System.out.println("");
+        System.out.println("");        System.out.println("");        System.out.println("");
+        System.out.println("");
+*/
+
     }
 
     public static Select theNumber(int number) {
