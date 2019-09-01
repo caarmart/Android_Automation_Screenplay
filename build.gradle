@@ -6,20 +6,17 @@ buildscript {
     }
     dependencies {
         classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.7.1"
+        classpath "net.serenity-bdd:serenity-gradle-plugin:2.0.70"
     }
 }
 
 plugins {
     id 'java'
     id "org.sonarqube" version "2.7.1"
-    id 'jacoco'
-}
-jacoco {
-    toolVersion = "0.8.4"
-    reportsDir = file("$buildDir/customJacocoReportDir")
 }
 
 apply plugin: "org.sonarqube"
+apply plugin: "net.serenity-bdd.aggregator"
 
 version '1.0-SNAPSHOT'
 
