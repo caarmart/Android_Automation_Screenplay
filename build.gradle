@@ -12,6 +12,11 @@ buildscript {
 plugins {
     id 'java'
     id "org.sonarqube" version "2.7.1"
+    id 'jacoco'
+}
+jacoco {
+    toolVersion = "0.8.4"
+    reportsDir = file("$buildDir/customJacocoReportDir")
 }
 
 apply plugin: "org.sonarqube"
