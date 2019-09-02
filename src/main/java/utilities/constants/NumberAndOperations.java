@@ -1,12 +1,18 @@
-package utilities;
+package utilities.constants;
+
+import static utilities.constants.ScreenplayStructure.UTILITY_CLASS;
 
 public class NumberAndOperations {
+
+    private NumberAndOperations() {
+        throw new IllegalStateException(UTILITY_CLASS);
+    }
 
     public static final String ADD = "+";
     public static final String MINUS = "-";
     public static final String MUL = "*";
     public static final String DIV = "/";
-    public static final String EQUALS = "=";
+    public static final String EQ = "=";
     public static final int NUMBER_0 = 0;
     public static final int NUMBER_1 = 1;
     public static final int NUMBER_2 = 2;
