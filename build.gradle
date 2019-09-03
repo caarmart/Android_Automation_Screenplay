@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.7.1"
+        classpath "net.serenity-bdd:serenity-gradle-plugin:2.0.70"
     }
 }
 
@@ -15,6 +16,7 @@ plugins {
 }
 
 apply plugin: "org.sonarqube"
+apply plugin: "net.serenity-bdd.aggregator"
 
 version '1.0-SNAPSHOT'
 
