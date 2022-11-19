@@ -1,11 +1,11 @@
-"# Android automation"
+## "**Android automation**"
 
-Used tools/stacks in this project
+### **Used tools/stacks in this project**
 * Cucumber
 * Screenplay
 * Java
 * Gradle
 * Appium
 
-Highlighted logic
+### **Highlighted logic**
 * Switch case with the numbers
