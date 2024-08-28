@@ -20,6 +20,7 @@ public class MathOperation implements Task {
     }
 
     @Override
+    @Step("{0} has performed an operation")
     public <T extends Actor> void performAs(T actor) {
         String expectedResult = String.valueOf(firstNumber + secondNumber);
         actor.remember("ExpectedResult", expectedResult);
