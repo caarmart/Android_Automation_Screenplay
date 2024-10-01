@@ -1,7 +1,7 @@
 ## "**Android automation**"
 
 ### **Used tools/stacks in this project**
-* Cucumber
+* Cucumber (You can add * instead of Given if it is a preconditions)
 * Screenplay
 * Java
 * Gradle
